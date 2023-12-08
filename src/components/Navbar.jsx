@@ -54,7 +54,7 @@ const Navbar = () => {
           scrolled
             ? 'bg-[rgba(255,255,255,0.44)] dark:bg-bgTransparent  animate__animated animate__fadeInDown'
             : 'bg-containerColor dark:bg-titleColor'
-        } w-full flex flow-row items-center justify-between font-poppins dark:text-white py-1 fixed md:px-16 xl:px-[35rem] px-3  z-[99999999999999938892992924949249472747247]`}
+        } w-full flex flow-row items-center justify-between font-poppins dark:text-white py-1 fixed md:px-20 xlg:px-[15rem] px-4 z-[99999999999999938892992924949249472747247]`}
       >
         <div className='flex items-center w-1/3'>
           <img src={logo} alt='' className='w-5 h-5' />
@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
 
         <div className='w-1/3'>
-          <div className='md:flex flex-row hidden items-center gap-3'>
+          <div className='md:flex flex-row hidden items-center gap-6'>
             {links.map((item) => (
               <div key={item.id}>
                 <a href={`#${item.navLink}`}>
@@ -83,7 +83,7 @@ const Navbar = () => {
                       active === item.navLink
                         ? 'text-green-500'
                         : 'text-gray-500 dark:text-white'
-                    } text-[12px] font-medium cursor-pointer`}
+                    } text-[14px] font-medium cursor-pointer`}
                   >
                     {item.name}
                   </h3>

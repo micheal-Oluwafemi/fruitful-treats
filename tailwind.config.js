@@ -23,7 +23,9 @@ export default {
         xs: '450px',
         md: '658px',
         lg: '976px',
-        xl: '2560px',
+        xl: '1024px',
+        xxl: '2560px',
+        xlg: '1440px',
       },
       fontFamily: {
         cherryBoom: ['"Cherry Bomb One"', 'sans-serif'],
