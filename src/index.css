@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ocr-a-std');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 658px) {
+  .clippy {
+    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 86%);
+  }
+}
+
+.clipy {
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 86%);
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  column-gap: 16px;
+  row-gap: 20px;
+}
+
+@media only screen and (max-width: 399px) {
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* column-gap: 80px; */
+    row-gap: 0px;
+  }
+}
+
+.grid-list :is(.card-banner, .movie-card) {
+  width: 100%;
+}
+/* @media (min-width: 658px) { */
+.contain {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* } */
+
+.contaiin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.7;
+  }
+}
+.animate {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.toast {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  top: 35px;
+}
