@@ -193,7 +193,7 @@ const Cart = () => {
               }  mt-2 cursor-pointer`}
             >
               <div className='flex items-center gap-[1px]'>
-                <HiOutlineCreditCard size={15} />
+                <HiOutlineCreditCard size={15} color='black' />
 
                 <h4 className='text-[10px] text-black font-semibold'>
                   Pay With Card
@@ -201,9 +201,9 @@ const Cart = () => {
               </div>
 
               <div className='flex items-center gap-[1px]'>
-                <BsJustifyLeft size={11} />
+                <BsJustifyLeft size={11} color='black' />
 
-                <p className='text-[9px] font-semibold'>paystack</p>
+                <p className='text-[9px] font-semibold text-black'>paystack</p>
               </div>
             </div>
 
@@ -247,21 +247,21 @@ const Cart = () => {
                 maxLength={16}
                 onChange={handleInputChange}
                 // onFocus={() => setIsFlipped((prev) => !prev)}
-                className='border border-gray-500 mt-3 text-[11px] px-2 py-1 w-full rounded-sm outline-none text-black'
+                className='border border-gray-500 mt-3 text-[11px] px-2 py-2 w-full rounded-sm outline-none text-black'
               />
 
               <div className='flex items-center justify-between mt-2'>
                 <input
                   type='text'
                   onChange={handleDateChange}
-                  className='border border-gray-500 text-[11px] px-2 py-1 rounded-sm w-[3.5rem] outline-none text-black'
+                  className='border border-gray-500 text-[11px] px-2 py-1.5 rounded-sm w-[3.5rem] outline-none text-black'
                   maxLength={4}
                   placeholder='MM/YY'
                 />
 
                 <input
                   type='text'
-                  className='border border-gray-500 text-[11px] px-2 py-1 rounded-sm w-[3rem] outline-none text-black'
+                  className='border border-gray-500 text-[11px] px-2 py-1.5 rounded-sm w-[3rem] outline-none text-black'
                   placeholder='CVV'
                   maxLength={3}
                   onClick={() => setIsFlipped((prev) => !prev)}

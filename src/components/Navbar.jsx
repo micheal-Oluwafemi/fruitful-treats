@@ -66,7 +66,7 @@ const Navbar = () => {
               setActive('');
             }}
           >
-            <h1 className='font-cherryBoom text-xl text-black dark:text-white'>
+            <h1 className='font-cherryBoom text-[1.3rem] text-black dark:text-white'>
               Fruits
             </h1>
           </Link>
@@ -118,9 +118,9 @@ const Navbar = () => {
 
           <div onClick={handleThemeSwitch}>
             {theme === 'dark' ? (
-              <BsBrightnessHighFill size={15} cursor='pointer' />
+              <BsBrightnessHighFill size={22} cursor='pointer' />
             ) : (
-              <HiOutlineMoon size={15} cursor='pointer' />
+              <HiOutlineMoon size={22} cursor='pointer' />
             )}
           </div>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
             onClick={() => setHideMenu(true)}
             className='cursor-pointer md:hidden'
           >
-            <HiMenuAlt3 size={15} />
+            <HiMenuAlt3 size={22} />
           </div>
         </div>
       </section>

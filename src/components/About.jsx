@@ -34,7 +34,10 @@ const About = ({ theme }) => {
         </div>
 
         <div className=' flex justify-center relative'>
-          <ScrollAnimation animateIn='animate__animated animate__zoomIn'>
+          <ScrollAnimation
+            animateIn='animate__animated animate__zoomIn'
+            className='flex justify-center md:justify-start'
+          >
             <h4 className='text-[12px] pt-4 text-textColor text-center md:text-start w-[80%] md:w-full font-medium '>
               The Fruit comes to us from the best harvests, planted with the
               care required to obtain the best quality fruit, enjoying its

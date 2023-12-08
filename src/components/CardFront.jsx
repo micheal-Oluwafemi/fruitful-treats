@@ -5,21 +5,23 @@ import { mastercard } from '../assets';
 const CardFront = ({ acctNum, setIsFlipped, date, hideIcon }) => {
   return (
     <>
-      <div className='p-2 bg-gray-200 text-black rounded-md h-[8.2rem]'>
+      <div className='p-2 bg-gray-200 text-black rounded-md h-[11rem]'>
         <div
           className={`${hideIcon === true ? 'flex justify-end' : 'hidden'} `}
         >
-          <img src={mastercard} alt='' className='w-8' />
+          <img src={mastercard} alt='' className='w-11' />
         </div>
 
-        <div className={`${hideIcon === true ? 'pt-0' : 'pt-8'}`}>
-          <FcSimCardChip size={26} />
+        <div className={`${hideIcon === true ? 'pt-0' : 'pt-10'}`}>
+          <FcSimCardChip size={39} />
 
-          <h1 className='text-[11px] font-semibold pt-1.5 tracking-widest font-cardFont'>
+          <h1
+            className={`  text-[14px] font-semibold pt-4 tracking-widest font-cardFont`}
+          >
             {acctNum}
           </h1>
 
-          <h3 className='pt-2 text-[12px]'>{date}</h3>
+          <h3 className='pt-4 text-[12px]'>{date}</h3>
         </div>
       </div>
     </>
