@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  branch1,
-  fruitLine1,
-  fruitLine2,
-  halfbranch,
-  showcaseImg,
-} from '../assets';
+import { fruitLine2, halfbranch, showcaseImg } from '../assets';
 import 'animate.css';
 
 const Showcase = ({ theme }) => {
