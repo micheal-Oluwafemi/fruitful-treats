@@ -193,7 +193,7 @@ const Cart = () => {
               }  mt-2 cursor-pointer`}
             >
               <div className='flex items-center gap-[1px]'>
-                <HiOutlineCreditCard size={15} />
+                <HiOutlineCreditCard size={15} color='black' />
 
                 <h4 className='text-[10px] text-black font-semibold'>
                   Pay With Card
@@ -201,9 +201,9 @@ const Cart = () => {
               </div>
 
               <div className='flex items-center gap-[1px]'>
-                <BsJustifyLeft size={11} />
+                <BsJustifyLeft size={11} color='black' />
 
-                <p className='text-[9px] font-semibold'>paystack</p>
+                <p className='text-[9px] font-semibold text-black'>paystack</p>
               </div>
             </div>
 
