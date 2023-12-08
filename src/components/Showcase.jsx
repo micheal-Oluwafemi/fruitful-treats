@@ -27,7 +27,7 @@ const Showcase = ({ theme }) => {
               src={fruitLine2}
               alt=''
               className={`w-10 text-black ${
-                theme === 'dark' ? 'invert-0' : 'invert'
+                theme === 'dark' ? '' : 'invert'
               }`}
             />
           </div>
@@ -55,7 +55,7 @@ const Showcase = ({ theme }) => {
           src={halfbranch}
           alt=''
           className={`md:w-32 w-24 text-black  ${
-            theme === 'dark' ? 'invert-0' : 'invert'
+            theme === 'dark' ? '' : 'invert'
           }`}
         />
       </div>
