@@ -28,7 +28,7 @@ const CTA = () => {
             us
           </p>
 
-          <div className='bg-white pl-3 pr-1.5 py-1 flex items-center rounded-full justify-between w-[90%] me:block hidden'>
+          <div className='bg-white pl-3 pr-1.5 py-1 md:flex items-center rounded-full justify-between w-[90%] hidden'>
             <input
               type='text'
               placeholder='Enter your email'
