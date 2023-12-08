@@ -33,9 +33,12 @@ const Showcase = ({ theme }) => {
         </div>
 
         <div className='flex justify-center md:justify-start animate__animated animate__fadeInDown'>
-          <button className='font-medium text-[10px] bg-greenColor text-white py-2 px-2 mt-2 rounded-full'>
+          <a
+            href='#popular'
+            className='font-medium text-[10px] bg-greenColor text-white py-2 px-2 mt-2 rounded-full'
+          >
             Order Fruit Now
-          </button>
+          </a>
         </div>
       </div>
       <div className='w-[70%] md:w-1/2 animate__animated animate__zoomIn  z-50'>

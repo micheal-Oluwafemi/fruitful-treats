@@ -145,7 +145,7 @@ const Navbar = () => {
                     active === item.navLink
                       ? 'text-green-500'
                       : 'text-gray-500 dark:text-white'
-                  } text-[13px] font-semibold`}
+                  } text-[14.3px] font-semibold`}
                 >
                   {item.name}
                 </h2>
