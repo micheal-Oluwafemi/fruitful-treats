@@ -18,6 +18,7 @@ import { useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const Cart = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -119,9 +120,7 @@ const Cart = () => {
 
   return (
     <div
-      className={`${
-        item.length === 6 ? 'h-[170vh]' : 'h-[120vh]'
-      }  bg-containerColor dark:bg-titleColor  md:px-12 px-3 pt-20 py-5 font-poppins text-black dark:text-white`}
+      className={`bg-containerColor dark:bg-titleColor  md:px-12 px-3 pt-20 py-5 font-poppins text-black dark:text-white`}
     >
       <div className='flex md:flex-row flex-col items-start gap-5 md:gap-2 overflow-auto'>
         <div className='md:w-[60%] w-full'>
@@ -305,6 +304,8 @@ const Cart = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

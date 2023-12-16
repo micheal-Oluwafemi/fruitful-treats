@@ -26,7 +26,7 @@ const Footer = ({ theme }) => {
       <div className='md:w-[30%] w-full'>
         <div className='flex items-center'>
           <img src={logo} alt='logo' className='w-6 lg:w-7' />
-          <h1 className='font-cherryBoom text-3xl lg:text-3xl text-titleColor'>
+          <h1 className='font-cherryBoom text-3xl lg:text-3xl text-titleColor dark:text-white'>
             Fruits
           </h1>
         </div>
