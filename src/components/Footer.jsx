@@ -98,6 +98,15 @@ const Footer = ({ theme }) => {
           </div>
         </div>
       </div>
+
+      <div className='flex justify-center items-center self-center'>
+        <h3 className='text-black dark:text-white text-center text-[15px] pt-5'>
+          Developed by{' '}
+          <a href='https://rayt3ch.vercel.app' className='font-semibold'>
+            raytheDev
+          </a>
+        </h3>
+      </div>
     </section>
   );
 };
