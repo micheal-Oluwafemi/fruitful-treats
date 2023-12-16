@@ -57,7 +57,7 @@ const Navbar = () => {
         } w-full flex flow-row items-center justify-between font-poppins dark:text-white py-1 fixed md:px-20 xlg:px-[15rem] px-4 z-[99999999999999938892992924949249472747247]`}
       >
         <div className='flex items-center w-1/3'>
-          <img src={logo} alt='' className='w-5 h-5' />
+          <img src={logo} alt='' className='w-6 h-6' />
 
           <Link
             to={'/'}
@@ -66,14 +66,14 @@ const Navbar = () => {
               setActive('');
             }}
           >
-            <h1 className='font-cherryBoom text-[1.3rem] text-black dark:text-white'>
+            <h1 className='font-cherryBoom text-[1.5rem] lg:text-[1.7rem] text-titleColor dark:text-white '>
               Fruits
             </h1>
           </Link>
         </div>
 
         <div className='w-1/3'>
-          <div className='md:flex flex-row hidden items-center gap-6'>
+          <div className='md:flex flex-row hidden items-center gap-4 lg:gap-10 '>
             {links.map((item) => (
               <div key={item.id}>
                 <a href={`#${item.navLink}`}>
@@ -83,7 +83,7 @@ const Navbar = () => {
                       active === item.navLink
                         ? 'text-green-500'
                         : 'text-gray-500 dark:text-white'
-                    } text-[14px] font-medium cursor-pointer`}
+                    } text-[14px] lg:text-[16px] font-medium cursor-pointer`}
                   >
                     {item.name}
                   </h3>
@@ -99,17 +99,17 @@ const Navbar = () => {
             onClick={() => window.scrollTo(0, 0)}
             className='relative'
           >
-            <BsFillHandbagFill size={15} cursor='pointer' />
+            <BsFillHandbagFill size={23} cursor='pointer' />
 
             <div
               className={`${
                 item.length >= 1 ? 'bg-green-500' : ''
-              } absolute -top-[2px] -right-[5px] w-[11px] h-[11px] rounded-full flex items-center justify-center`}
+              } absolute -top-[2px] -right-[5px] w-[15px] h-[15px] lg:w-[16px] lg:h-[16px] rounded-full flex items-center justify-center`}
             >
               <p
                 className={`${
                   item.length >= 1 ? 'block' : 'hidden'
-                } text-center text-[8px] font-medium text-white`}
+                } text-center text-[9px] lg:text-[10px] font-medium text-white`}
               >
                 {item.length}
               </p>
@@ -118,9 +118,9 @@ const Navbar = () => {
 
           <div onClick={handleThemeSwitch}>
             {theme === 'dark' ? (
-              <BsBrightnessHighFill size={22} cursor='pointer' />
+              <BsBrightnessHighFill size={25} cursor='pointer' />
             ) : (
-              <HiOutlineMoon size={22} cursor='pointer' />
+              <HiOutlineMoon size={25} cursor='pointer' />
             )}
           </div>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
             onClick={() => setHideMenu(true)}
             className='cursor-pointer md:hidden'
           >
-            <HiMenuAlt3 size={22} />
+            <HiMenuAlt3 size={25} />
           </div>
         </div>
       </section>
@@ -145,7 +145,7 @@ const Navbar = () => {
                     active === item.navLink
                       ? 'text-green-500'
                       : 'text-gray-500 dark:text-white'
-                  } text-[14.3px] font-semibold`}
+                  } text-[16px] font-semibold`}
                 >
                   {item.name}
                 </h2>
@@ -164,9 +164,9 @@ const Navbar = () => {
 
         <div
           onClick={() => setHideMenu(false)}
-          className='fixed right-3 top-2 z-[999999993939399393939393939393939393939] cursor-pointer'
+          className='fixed right-3 top-3 z-[999999993939399393939393939393939393939] cursor-pointer'
         >
-          <HiX size={20} color={`${theme === 'dark' ? 'white' : 'black'}`} />
+          <HiX size={25} color={`${theme === 'dark' ? 'white' : 'black'}`} />
         </div>
       </section>
     </>

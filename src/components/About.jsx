@@ -27,7 +27,7 @@ const About = ({ theme }) => {
       <div className='md:w-1/2 w-full'>
         <div className='flex flex-row relative '>
           <ScrollAnimation animateIn='animate__animated animate__fadeInUp'>
-            <h1 className='text-[2.6rem] leading-10 font-cherryBoom text-titleColor dark:text-whiteColor md:text-start text-center'>
+            <h1 className='text-[3rem] leading-10 font-cherryBoom text-titleColor dark:text-whiteColor md:text-start text-center lg:text-6xl'>
               We Provide Healthy Fruits
             </h1>
           </ScrollAnimation>
@@ -38,7 +38,7 @@ const About = ({ theme }) => {
             animateIn='animate__animated animate__zoomIn'
             className='flex justify-center md:justify-start'
           >
-            <h4 className='text-[12px] pt-4 text-textColor text-center md:text-start w-[80%] md:w-full font-medium '>
+            <h4 className='text-[16px] pt-4 text-textColor text-center md:text-start w-[80%] md:w-full font-medium lg:text-[16px]'>
               The Fruit comes to us from the best harvests, planted with the
               care required to obtain the best quality fruit, enjoying its
               flavours and taking care of your health.
@@ -58,7 +58,7 @@ const About = ({ theme }) => {
 
         <ScrollAnimation animateIn='animate__animated animate__bounceIn'>
           <div className='flex justify-center md:justify-start md:mt-4 mt-7'>
-            <button className='font-medium text-[11px] bg-greenColor text-white py-2 px-4 mt-2 rounded-full'>
+            <button className='font-medium text-[16px] bg-greenColor text-white py-2 px-5 mt-2 rounded-full lg:text-[15px] lg:px-5 lg:py-2.5'>
               Know More
             </button>
           </div>

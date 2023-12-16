@@ -6,12 +6,12 @@ const Showcase = ({ theme }) => {
   return (
     <section
       className='flex md:flex-row md:gap-0
-     gap-3 flex-col items-center pt-16 font-poppins relative'
+     gap-3 flex-col items-center pt-20 font-poppins relative'
     >
       <div className='md:w-1/2 w-full'>
         <div className='flex flex-row relative '>
           <div className='animate__animated animate__zoomIn'>
-            <h1 className='text-5xl font-cherryBoom text-titleColor dark:text-whiteColor md:text-start text-center'>
+            <h1 className='text-[3.4rem] leading-[55px] lg:text-6xl font-cherryBoom text-titleColor dark:text-whiteColor md:text-start text-center'>
               Enjoy The Best Fresh Fruits
             </h1>
           </div>
@@ -26,7 +26,7 @@ const Showcase = ({ theme }) => {
         </div>
 
         <div className=' flex justify-center'>
-          <h4 className='text-[12px] pt-2 text-textColor text-center md:text-start w-[80%] md:w-full font-medium animate__animated animate__fadeInUp'>
+          <h4 className='text-[16px] lg:text-[16px] pt-3 text-textColor text-center md:text-start w-[80%] md:w-full font-medium animate__animated animate__fadeInUp'>
             Enjoy the best organic fruits harvested with the best possible
             quality, obtaining unique and delicious flavours.
           </h4>
@@ -35,13 +35,13 @@ const Showcase = ({ theme }) => {
         <div className='flex justify-center md:justify-start animate__animated animate__fadeInDown'>
           <a
             href='#popular'
-            className='font-medium text-[10px] bg-greenColor text-white py-2 px-2 mt-2 rounded-full'
+            className='font-medium text-[15px] lg:text-[14px] bg-greenColor text-white py-2 px-3 lg:px-4 lg:py-2.5 mt-2 rounded-full'
           >
             Order Fruit Now
           </a>
         </div>
       </div>
-      <div className='w-[70%] md:w-1/2 animate__animated animate__zoomIn  z-50'>
+      <div className='w-[80%] md:w-1/2 animate__animated animate__zoomIn  z-50'>
         <img src={showcaseImg} alt='' className='' />
       </div>
 

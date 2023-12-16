@@ -9,7 +9,9 @@ const Footer = ({ theme }) => {
         <img
           src={branch2}
           alt=''
-          className={`w-36 -z-20 ${theme === 'dark' ? 'invert-0' : 'invert'}`}
+          className={`w-36 -z-20 lg:w-40 ${
+            theme === 'dark' ? 'invert-0' : 'invert'
+          }`}
         />
       </div>
 
@@ -23,70 +25,74 @@ const Footer = ({ theme }) => {
 
       <div className='md:w-[30%] w-full'>
         <div className='flex items-center'>
-          <img src={logo} alt='logo' className='w-4' />
-          <h1 className='font-cherryBoom text-lg'>Fruit</h1>
+          <img src={logo} alt='logo' className='w-6 lg:w-7' />
+          <h1 className='font-cherryBoom text-3xl lg:text-3xl text-titleColor'>
+            Fruits
+          </h1>
         </div>
 
-        <p className='text-[12px] text-titleColor dark:text-gray-100 pt-6'>
+        <p className='text-[15px] text-titleColor dark:text-gray-100 pt-6 lg:text-[16px]'>
           Eat healthy, choose <br /> the best fruits.
         </p>
       </div>
 
       <div className='flex flex-row items-start md:w-[70%] md:gap-3 gap-2'>
         <div className='w-1/4'>
-          <h1 className='text-sm text-titleColor dark:text-white font-semibold '>
+          <h1 className='text-lg text-titleColor dark:text-white font-semibold lg:text-xl '>
             Company
           </h1>
 
           <div className='flex flex-col items-start pt-2 gap-2'>
-            <h5 className='text-[12px]'>FAQs</h5>
-            <h5 className='text-[12px]'>About Us</h5>
-            <h5 className='text-[12px]'>Contact Us</h5>
+            <h5 className='text-[14px] lg:text-[16px]'>FAQs</h5>
+            <h5 className='text-[14px] lg:text-[16px]'>About Us</h5>
+            <h5 className='text-[14px] lg:text-[16px]'>Contact Us</h5>
           </div>
         </div>
 
         <div className='w-1/4'>
-          <h1 className='text-sm text-titleColor dark:text-white font-semibold '>
+          <h1 className='text-lg text-titleColor dark:text-white font-semibold lg:text-xl'>
             News
           </h1>
 
           <div className='flex flex-col items-start pt-2 gap-2'>
-            <h5 className='text-[12px]'>Features</h5>
-            <h5 className='text-[12px]'>Testimony</h5>
-            <h5 className='text-[12px]'>Videos</h5>
+            <h5 className='text-[14px] lg:text-[16px]'>Features</h5>
+            <h5 className='text-[14px] lg:text-[16px]'>Testimony</h5>
+            <h5 className='text-[14px] lg:text-[16px]'>Videos</h5>
           </div>
         </div>
 
         <div className='w-1/4'>
-          <h1 className='text-sm text-titleColor dark:text-white font-semibold '>
+          <h1 className='text-lg text-titleColor dark:text-white font-semibold lg:text-xl'>
             Address
           </h1>
 
           <div className='flex flex-col items-start pt-2 gap-2'>
-            <h5 className='text-[11px]'>AV. Hacienda 1234 Lima 4321, Peru</h5>
-            <h5 className='text-[11px]'>9AM -11PM</h5>
+            <h5 className='text-[14px] lg:text-[16px]'>
+              AV. Hacienda 1234 Lima 4321, Peru
+            </h5>
+            <h5 className='text-[13px] lg:text-[16px]'>9AM -11PM</h5>
           </div>
         </div>
 
         <div className='w-1/4'>
-          <h1 className='text-sm text-titleColor dark:text-white font-semibold '>
+          <h1 className='text-lg lg:text-xl text-titleColor dark:text-white font-semibold '>
             Social<span className='md:hidden'>s</span>{' '}
             <span className='md:block hidden'>Media</span>
           </h1>
 
-          <div className='flex flex-row items-center gap-3 pt-2'>
+          <div className='flex md:flex-row flex-col items-center gap-3 pt-2'>
             <BsFacebook
-              size={15}
+              size={20}
               color={`${theme === 'dark' ? 'white' : 'black'}`}
             />
 
             <BsInstagram
-              size={15}
+              size={20}
               color={`${theme === 'dark' ? 'white' : 'black'}`}
             />
 
             <BsYoutube
-              size={15}
+              size={20}
               color={`${theme === 'dark' ? 'white' : 'black'}`}
             />
           </div>

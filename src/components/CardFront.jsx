@@ -16,12 +16,12 @@ const CardFront = ({ acctNum, setIsFlipped, date, hideIcon }) => {
           <FcSimCardChip size={39} />
 
           <h1
-            className={`  text-[14px] font-semibold pt-4 tracking-widest font-cardFont`}
+            className={`text-[16px] lg:text-[16px] font-semibold pt-4 tracking-widest font-cardFont`}
           >
             {acctNum}
           </h1>
 
-          <h3 className='pt-4 text-[12px]'>{date}</h3>
+          <h3 className='pt-4 text-[14px] lg:text-[15px]'>{date}</h3>
         </div>
       </div>
     </>

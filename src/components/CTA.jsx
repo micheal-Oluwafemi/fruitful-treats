@@ -8,7 +8,7 @@ const CTA = () => {
         <img
           src={ctaImg}
           alt=''
-          className='w-full h-60 rounded-3xl blur-sm animate'
+          className='w-full h-60 lg:h-64 rounded-3xl blur-sm animate'
         />
 
         <div className='absolute z-[999] -top-4 left-4'>
@@ -19,23 +19,23 @@ const CTA = () => {
         </div>
 
         <div className='absolute contaiin'>
-          <h1 className='text-center text-white font-cherryBoom text-3xl leading-[28px]'>
+          <h1 className='text-center text-white font-cherryBoom text-3xl leading-[28px] lg:text-5xl'>
             Receive the Best Fruits
           </h1>
 
-          <p className='text-[11px] text-center text-gray-100 font-medium py-2'>
+          <p className='text-[15px] text-center text-gray-100 font-medium py-2 lg:text-[16px]'>
             Get up to date with the latest fruit harvests and information from
             us
           </p>
 
-          <div className='bg-white pl-3 pr-1.5 py-1 md:flex items-center rounded-full justify-between w-[90%] hidden'>
+          <div className='bg-white pl-5 pr-1.5 py-1 md:flex items-center rounded-full justify-between w-[90%] hidden lg:py-2.5 lg:w-[93%]'>
             <input
               type='text'
               placeholder='Enter your email'
-              className='border-none outline-none text-[10px]'
+              className='border-none outline-none text-[10px] lg:text-[15px]'
             />
 
-            <button className='text-[9px] w-24 py-2 rounded-full bg-green-500 text-white'>
+            <button className='text-[9px] w-24 py-2 rounded-full bg-green-500 text-white lg:text-[12px] lg:w-28 lg:py-3'>
               Subscribe Now
             </button>
           </div>
