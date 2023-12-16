@@ -120,7 +120,7 @@ const Cart = () => {
 
   return (
     <div
-      className={`bg-containerColor dark:bg-titleColor  md:px-12 px-3 pt-20 py-5 font-poppins text-black dark:text-white`}
+      className={`bg-containerColor dark:bg-titleColor  md:px-[7rem] xlg:px-[15rem] px-4 pt-20 py-5 font-poppins text-black dark:text-white`}
     >
       <div className='flex md:flex-row flex-col items-start gap-5 md:gap-2 overflow-auto'>
         <div className='md:w-[60%] w-full'>

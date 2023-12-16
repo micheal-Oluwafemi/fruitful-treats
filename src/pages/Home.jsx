@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Home = ({ theme }) => {
   return (
-    <div className='md:px-20 xlg:px-[15rem] px-4 w-full'>
+    <div className='md:px-[7rem] xlg:px-[15rem] px-4 w-full'>
       <Showcase theme={theme} />
       <Enjoy />
       <About theme={theme} />
